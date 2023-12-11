@@ -1,0 +1,25 @@
+body {
+    background-color: pink;
+    color: black;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+a:visited {
+    text-decoration: None;
+    color: black;
+}
+
+.cover {
+    height: fit-content;
+    width: fit-content;
+}
+.cover:hover {
+    filter: brightness(125%);
+}

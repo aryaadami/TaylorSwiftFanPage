@@ -1,0 +1,11 @@
+{% extends "reviews/base.html" %}
+
+{% block body %}
+    {% for song in songs %}
+        <div class="song">
+            <a href="{{ song.get_absolute_url }}">
+                <li>{{ song.title }}</li>
+            </a>
+        </div>
+    {% endfor %}
+{% endblock %}

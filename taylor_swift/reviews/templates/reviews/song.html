@@ -1,0 +1,14 @@
+{% extends "reviews/base.html" %}
+
+{% block body %}
+    <a href="{{ song.link }}" target="_blank">
+        <h1>{{ song.title }}</h1>
+    </a>
+    <h2>Album: {{ song.album }}</h2>
+    <h3>Rating: {{ song.rating }}</h3>
+    {% if song_contains_seconds %}
+        <p>The length of the song is {{ length_min }} min {{ length_sec }} sec.</p>
+    {% else %}
+        <p>The length of the song is {{ length_min }} min.</p>
+    {% endif %}
+{% endblock %}

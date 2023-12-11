@@ -1,0 +1,15 @@
+{% extends "reviews/base.html" %}
+
+{% block body %}
+    {% for album in albums %}
+        <div class="album-div">
+            <h1>{{ album.title }}</h1>
+            <div class="cover">
+                <a href="{{ album.get_absolute_url }}">
+                    <img src="{{ album.cover }}" style="width:400px" alt="Cover not available :(">
+                </a>
+            </div>
+            <p class="publish">{{ album.publish }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}
